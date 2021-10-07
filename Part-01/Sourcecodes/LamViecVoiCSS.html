@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Làm việc với CSS trong PHP</title>
+        <style type="text/css">
+        /*Viết css cho thẻ id=stanford*/
+        #stanford
+        {
+            color:blue;
+            font-size: 38px;
+            font-weight: bold;
+            background-color: oldlace;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        p.moTa
+        {
+            font-style: italic;
+            font-size: 20px;
+            color:purple;
+        }
+        </style>
+        <!--Khai báo sử dụng file css trong trang web-->
+        <link rel="stylesheet" type="text/css" href="css/mystyle.css"/>
+    </head>
+    <body>
+        <div id="stanford">
+            Stanford - Dạy lập trình
+        </div>
+        <h1>Khóa học PHP cơ bản tại Stanford</h1>
+        <h2>Dành cho các bạn muốn xây dựng và phát triển ứng dụng web bằng php</h2>
+        <p class="moTa">Dành cho các bạn mới học lập trình web muốn xây dựng web
+             bằng ngôn ngữ PHP. Trong đó bao gồm các khối kiến thức quan
+             trọng sau:
+        </p>
+        <p class="moTa">- Lập trình web cơ bản <b><i>HTML, CSS, JS, jQuery</i></b></p>
+        <p class="moTa">- Lập trình với PHP</p>
+        <p class="moTa">- Lập trình với cơ sở dữ liệu MySQL</p>
+        <div class="moTa">- <b>Project</b></div>
+        <p>
+            Website: <a href="https://stanford.com.vn">stanford.com.vn</a>
+        </p>
+    </body>
+</html>

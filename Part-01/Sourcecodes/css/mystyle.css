@@ -1,0 +1,28 @@
+/*Khai báo file css dùng cho nhiều trang web*/
+h1
+{
+    color:blue;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+h2
+{
+    color:orange;
+    font-size:28px;
+    font-weight: bold;
+}
+
+a
+{
+    text-decoration: none;
+    font-size: 16px;
+}
+
+a:hover
+{
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: bold;
+}

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2d077d1e-6ae4-4cb6-bfc6-6de397ce0ec1" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="PhpServers">
+    <servers>
+      <server host="localhost" id="2b07f482-7800-4d01-92d4-22fb08741b55" name="Appache Server" port="86" />
+    </servers>
+  </component>
+  <component name="ProjectId" id="1kgxFT5JidaSGD6gHtGxZaFL6lq" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Php Appache Server" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" browser="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" server_name="Appache Server" start_url="/P0920_LopVaDoiTuong">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2d077d1e-6ae4-4cb6-bfc6-6de397ce0ec1" name="Default Changelist" comment="" />
+      <created>1606135931176</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606135931176</updated>
+      <workItem from="1606135932857" duration="6734000" />
+      <workItem from="1606720835962" duration="789000" />
+      <workItem from="1606740285694" duration="5995000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="0" y="0" key="#Servers" timestamp="1606720896959">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="221" y="36" key="#Servers/0.0.1280.760@0.0.1280.760" timestamp="1606136722990" />
+    <state x="0" y="0" key="#Servers/0.0.1920.1080@0.0.1920.1080" timestamp="1606720896959" />
+    <state x="144" y="51" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606720899488">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="96" y="36" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.760@0.0.1280.760" timestamp="1606136736372" />
+    <state x="144" y="51" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1606720899488" />
+    <state x="449" y="205" key="NewPhpClassDialog" timestamp="1606744948086">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="449" y="195" key="NewPhpClassDialog/0.0.1280.760@0.0.1280.760" timestamp="1606142041766" />
+    <state x="449" y="205" key="NewPhpClassDialog/0.0.1280.800@0.0.1280.800" timestamp="1606744948086" />
+    <state x="477" y="320" key="NewPhpFileDialog" timestamp="1606745584009">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="477" y="304" key="NewPhpFileDialog/0.0.1280.760@0.0.1280.760" timestamp="1606141803316" />
+    <state x="477" y="320" key="NewPhpFileDialog/0.0.1280.800@0.0.1280.800" timestamp="1606745584009" />
+    <state x="315" y="0" width="900" height="728" key="SettingsEditor" timestamp="1606742044664">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="315" y="0" width="900" height="728" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1606742044664" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1606745606265">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1606745606265" />
+  </component>
+</project>

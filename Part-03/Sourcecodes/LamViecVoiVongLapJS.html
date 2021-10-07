@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Làm việc với vòng lặp trong Javascript</title>
+        <!--Khai báo sử dụng js-->
+        <script type="text/javascript">
+
+            function LamViecVoiVongLap()
+            {
+                //Sử dụng vòng lặp while
+                var i = 1;
+                console.log("Sử dụng vòng lặp while: ");
+                while(i <= 100)
+                {
+                    console.log("I Love You " + i);
+                    i++;//i = i + 1
+                }
+
+                console.log("Giá trị hiện thời của i = " + i);
+
+                console.log("Sử dụng vòng lặp do while: ");
+                do
+                {
+                    console.log("Giá trị i = " + i);
+                    i++;
+                }
+                while(i < 150);
+
+                //Sử dụng vòng lặp
+                console.log("Sử dụng vòng lặp for: ");
+
+                console.log("Các số chẵn là: ");
+
+                for(var j = 80; j <= 90; j+=2)
+                {
+                    console.log(j);
+                }
+
+                //Khai báo 1 mảng chứa các ngôn ngữ lập trình
+                var arr = ["C/C++", "C#", "Java", "PHP", "Python"];
+
+                console.log("Các ngôn ngữ là:");
+                var noiDung = "<ul>";
+                for(var j = 0; j < arr.length; j++)
+                {
+                    console.log(arr[j]);
+                    noiDung += "<li>" + arr[j] + "</li>";
+                }
+
+                noiDung += "</ul>";
+
+                //Hiển thị lên trang web
+                document.getElementById("noiDung").innerHTML = noiDung;
+            }
+
+            function LamViecVoiJSWindows()
+            {
+                var noiDung = "";
+                noiDung = "Browser, width = " + window.innerWidth + ", height = " + window.innerHeight + "\n";
+
+                noiDung += "Screen, width = " + screen.availWidth + ", height = " + screen.availHeight + "\n";
+
+                alert(noiDung);
+
+                /*var ketQua = confirm("Bạn có muốn mở trang web mới không ?");
+
+                if(ketQua)
+                {
+                    location.assign("https://stanford.com.vn");
+                }*/
+
+                var hoTen = prompt("Họ tên", "Nhập thông tin họ tên");
+
+                if(hoTen != null && hoTen.length > 0)
+                {
+                    alert("Họ tên của bạn là: " + hoTen);
+                }
+            }
+        </script>
+    </head>
+    <body onload="LamViecVoiVongLap()">
+        <h3>Các ngôn ngữ lập trình:</h3>
+        <div id="noiDung">
+
+        </div>
+        <a href="#" onclick="LamViecVoiJSWindows()">Hiển thị JS Window</a>
+    </body>
+</html>

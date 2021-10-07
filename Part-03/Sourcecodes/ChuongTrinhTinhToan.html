@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chương trình tính toán</title>
+        <!--Khai báo js sử dụng-->
+        <script type="text/javascript" src="js/TinhToan.js">
+        </script>
+        <!--Sử dụng js-->
+        <script type="text/javascript">
+        function ThucHienTinhToan()
+        {
+            //Khai báo biến
+            var soa = 0, sob = 0, ketQua = 0;
+            var phepToan = "";
+
+            //Lấy thông tin từ trên giao diện
+            soa = document.getElementById("txtSoa").value;
+            sob = document.getElementById("txtSob").value;
+            phepToan = document.getElementById("phepToan").value;
+
+            if(isNaN(soa))//Nếu không phải là kiểu số
+            {
+                alert("Bạn cần phải nhập số a là kiểu số");
+                document.getElementById("txtSoa").focus();
+                return;
+            }
+
+            if(isNaN(sob))
+            {
+                alert("Bạn cần phải nhập số b là kiểu số");
+                document.getElementById("txtSob").focus();
+                return;
+            }
+
+            //Chuyển về dạng số
+            soa = parseFloat(soa);
+            sob = parseFloat(sob);
+
+            console.log("Số a: " + soa);
+            console.log("Số b: " + sob);
+            console.log("Phép toán: " + phepToan);
+            //Thực hiện công việc
+            switch(phepToan)
+            {
+                case "1": ketQua = Tong(soa, sob);
+                    break;
+                case "2": ketQua = Hieu(soa, sob);
+                    break;
+                case "3": ketQua = Tich(soa, sob);
+                    break;
+                case "4": ketQua = Thuong(soa, sob);
+                    break;
+            }
+
+            //toFixed(2) lấy 2 số sau dấu phẩy
+            //Hiển thị kết quả
+            document.getElementById("txtKetQua").value = ketQua.toFixed(2);
+
+        }
+        </script>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Nhập thông tin tính toán</legend>
+            <table>
+                <tr>
+                    <td>Số a</td>
+                    <td>
+                        <input type="text" id="txtSoa"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Số b</td>
+                    <td>
+                        <input type="text" id="txtSob"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Phép toán</td>
+                    <td>
+                        <select id="phepToan">
+                            <option value="1">Cộng</option>
+                            <option value="2">Trừ</option>
+                            <option value="3">Nhân</option>
+                            <option value="4">Chia</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Kết quả</td>
+                    <td>
+                        <input type="text" id="txtKetQua"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="button" onclick="ThucHienTinhToan()" value="Tính toán"/>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </body>
+</html>

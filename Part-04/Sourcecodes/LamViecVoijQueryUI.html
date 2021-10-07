@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Làm việc với jQuery UI</title>
+          <!--Khai báo sử dụng jQuery-->
+          <script type="text/javascript" src="js/jquery-3.4.1.js">
+          </script>
+            <!--Khai báo sử dụng jQuery UI-->
+        <script type="text/javascript" src="js/jquery-ui.js">
+        </script>
+        <link rel="stylesheet" type="text/css" href="js/jquery-ui.css"/>
+        <!--Sử dụng jquery ui-->
+        <script type="text/javascript">
+        $(document).ready(function(){
+
+            $("#txtNgaySinh").datepicker({
+      changeMonth: true,
+      changeYear: true,
+      dateFormat:"dd/mm/yy"
+    });
+
+        //Ẩn form
+        $("#frmDangKy").hide();
+
+        //Khi nhấn nút đăng ký
+        $("#btnDangKyMoi").click(function(){
+            $("#frmDangKy").dialog({
+                height: 250,
+                width: 450,
+                modal: true
+            });
+        });
+
+        //Khai báo 1 mảng ngôn ngữ lập trình
+        var arrKhoaHoc = ["PHP", "Javascript", "Java", "C/C++", "C#", "Swift", "Python", "Kotlin"];
+
+        $("#cboKhoaHoc").autocomplete({
+            source: arrKhoaHoc
+        });
+
+        });
+
+        function LayThongTin()
+        {
+            var thongTin = "";
+
+            thongTin += "Ngày sinh: " + $("#txtNgaySinh").val();
+            thongTin += "\nKhóa học: " + $("#cboKhoaHoc").val();
+            alert(thongTin);
+        }
+        </script>
+    </head>
+    <body>
+        Khóa học: <input type="text" id="cboKhoaHoc"/><br>
+        Ngày sinh: <input type="text" id="txtNgaySinh"/>
+        <br>
+        <a href="#" id="btnDangKyMoi" title="Đăng ký người dùng mới">Đăng ký</a>
+        &nbsp;
+        <a href="#" onclick="LayThongTin()">Lấy thông tin</a>
+        <fieldset title="Đăng ký người dùng mới" id="frmDangKy">
+            <legend>Nhập thông tin đăng ký</legend>
+            <table>
+                <tr>
+                    <td>Tên đăng nhập:</td>
+                    <td>
+                        <input type="text" id="txtTenDangNhap"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mật khẩu:</td>
+                    <td>
+                        <input type="password" id="txtMatKhau"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mật khẩu nhập lại:</td>
+                    <td>
+                        <input type="password" id="txtMatKhauNhapLai"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Họ tên:</td>
+                    <td>
+                        <input type="text" id="txtHoTen"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="button" id="btnDangKy" value="Đăng ký"/>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Làm việc với javascript trong PHP</title>
+        <!--Khai báo cặp thẻ để sử dụng Javascript trên trang web-->
+        <script type="text/javascript">
+        function HienThiNgayThang()
+        {
+            document.getElementById("thongTin").innerHTML = Date();
+            document.write("Chào mừng các bạn đến với Javascript !");
+        }
+
+        function GioiThieu()
+        {
+            //alert("Chào mừng các bạn đến với Javascript !");
+        }
+        function TongHaiSo(a, b)
+        {
+            return a + b;
+        }
+
+        function InThongTin()
+        {
+            console.log("Làm việc với Javascript trong PHP !");
+        }
+
+        function LamViecVoiJavascript()
+        {
+            //Khai báo biến
+            var nam = 2020;
+            console.log("Năm hiện tại là: " + nam);
+
+            //Gán năm mới
+            nam = 2021;
+
+            console.log("Năm tới là: " + nam);
+
+            var tenCongTy = "Stanford - Đào tạo và phát triển công nghệ";
+            console.log(tenCongTy);
+
+            var trungBinh = 6.89;
+            console.log("Trung bình học tập là: " + trungBinh);
+
+            //Khai báo 1 mảng để chứa nhiều giá trị
+            var arr = new Array("HTML", "CSS", "Javascript", "PHP");
+
+            //Lấy phần tử thứ 1
+            console.log("Giá trị của phần tử 1 là: " + arr[0]);
+
+            //Phần tử 2
+            console.log("Giá trị của phần tử 2 là: " + arr[1]);
+
+            //Khai báo mảng
+            var arr1 = ["Táo", "Lê", "Mận", "Đào"];
+
+            //Gán lại giá trị
+            arr1[2] = "Quýt";
+
+            //Lấy phần tử thứ 3
+            console.log("Phần tử thứ 3 là: " + arr1[2]);
+
+            //Gọi hàm giới thiệu
+            GioiThieu();
+
+            //Gọi hàm in thông tin
+            InThongTin();
+
+            //Lần 2
+            InThongTin();
+
+            var tong = TongHaiSo(5, 4);
+
+            console.log("Tổng hai số 5 và 4 là: " + tong);
+
+            console.log("Chữ hoa: " + tenCongTy.toUpperCase());
+            console.log("Chữ thường: " + tenCongTy.toLowerCase());
+        }
+
+        //Hàm tính thương 2 số nhập từ giao diện bằng js
+        function ThucHienTinhToan()
+        {
+            //Khai báo biến
+            var soa = 0, sob = 0, thuong = 0;
+
+            //Lấy thông tin từ trên giao diện
+            soa = document.getElementById("txtSoa").value;
+            sob = document.getElementById("txtSob").value;
+
+            //Chuyển sang dạng số
+            soa = parseFloat(soa);
+            sob = parseFloat(sob);
+
+            if(sob != 0)
+            {
+                //Tính toán
+                thuong = soa/sob;
+                //Hiển thị lên giao diện
+                document.getElementById("txtThuong").value = thuong;
+            }
+            else
+            {
+                alert("Bạn cần phải nhập số b khác 0");
+                //Focus con chuột vào số b
+                document.getElementById("txtSob").focus();
+                document.getElementById("txtThuong").value = "";
+            }
+            
+        }
+
+        function ThucHienTinhThang()
+        {
+            //Khai báo biến
+            var thang = 0;
+            var strThangHT = "";
+
+            //Lấy thông tin từ trên giao diện
+            thang = document.getElementById("txtThang").value;
+
+            //Chuyển sang dạng số
+            thang = parseInt(thang);
+
+            //So sánh
+            switch(thang)
+            {
+                case 1: strThangHT = "Tháng một";
+                        break;
+                case 2: strThangHT = "Tháng hai";
+                        break;
+                case 3: strThangHT = "Tháng ba";
+                        break;
+                case 4: strThangHT = "Tháng tư";
+                        break;
+                case 5: strThangHT = "Tháng năm";
+                        break;
+                case 6: strThangHT = "Tháng sáu";
+                        break;
+                case 7: strThangHT = "Tháng bẩy";
+                        break;
+                case 8: strThangHT = "Tháng tám";
+                        break;
+                case 9: strThangHT = "Tháng chín";
+                        break;
+                        
+                case 10: strThangHT = "Tháng mười";
+                        break;
+                case 11: strThangHT = "Tháng mười một";
+                        break;
+                case 12: strThangHT = "Tháng mười hai";
+                        break;
+                default: strThangHT = "Không có tháng này";
+                        break;
+            }//End switch
+
+            //Hiển thị kết quả
+            document.getElementById("thangHienTai").innerHTML = strThangHT;
+        }
+        </script>
+    </head>
+    <body onload="LamViecVoiJavascript()">
+        <p id="thongTin"></p>
+        <p>
+            <a href="#" onclick="HienThiNgayThang()">Hiển thị ngày tháng</a>
+        </p>
+        <fieldset>
+            <legend>Nhập thông tin tính toán</legend>
+            <table>
+                <tr>
+                    <td>Số a</td>
+                    <td>
+                        <input type="text" id="txtSoa"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Số b</td>
+                    <td>
+                        <input type="text" id="txtSob"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Thương hai số</td>
+                    <td>
+                        <input type="text" id="txtThuong"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="button" onclick="ThucHienTinhToan()" value="Tính toán"/>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Nhập thông tin tháng</legend>
+            <table>
+                <tr>
+                    <td>Nhập tháng:</td>
+                    <td>
+                        <input type="text" id="txtThang"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tháng hiện tại là:</td>
+                    <td>
+                        <span id="thangHienTai"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="button" onclick="ThucHienTinhThang()" value="Tính tháng"/>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </body>
+</html>

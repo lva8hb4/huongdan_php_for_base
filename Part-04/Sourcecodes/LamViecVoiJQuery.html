@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Làm việc với jQuery trong PHP</title>
+        <!--Khai báo sử dụng jQuery-->
+        <script type="text/javascript" src="js/jquery-3.4.1.js">
+        </script>
+        <!--Sử dụng jQuery-->
+        <script type="text/javascript">
+        $(document).ready(function(){
+            //alert("Chào mừng các bạn đến với jQuery !");
+
+            $("p").click(function(){
+                //$(this).hide();
+            });
+
+            $("#btnThucHien").click(function(){
+
+                //Lấy thông tin từ id=stanford
+                var tenVietTat = $("#stanford").text();
+
+                //Gán giá trị chỉ dạng text hay văn bản chữ vào đối tượng mới
+                $("#thongTin").text(tenVietTat);
+
+                //Chấp nhận cả nội dung chứa thẻ html
+                $("#thongTin").html("<h1 style='color:blue;'>" + tenVietTat + "</h1>");
+
+                //Lấy thông tin từ thẻ input
+                var hoTen = $("#txtHoTen").val();
+
+                $("#thongBao").text("Họ tên là: " + hoTen);
+
+                //Lấy địa chỉ url từ thẻ a có class=info
+                var url = $("a.info").attr("href");
+
+                //Thêm vào thông báo
+                $("#thongBao").append("<br>Địa chỉ website là: " + url);
+
+                //Áp css cho thẻ h1
+                $("h1").css("background-color", "yellow");
+
+                //Áp dụng css cho thẻ p
+                $("p").addClass("moTa");
+
+                //Lấy danh sách thông tin trên các thẻ li
+                $("li").each(function(idx, value){
+
+                    console.log(idx + ": " + $(value).text());
+                });
+            });
+
+            $("#trangThai").change(function(){
+
+                alert("Trạng thái: " + $(this).prop("checked"));
+            });
+
+            $("#btnShow").click(function(){
+
+                $("#box1").fadeIn();
+                $("#box2").fadeIn("slow");
+                $("#box3").fadeIn(3000);
+            });
+
+            $("#btnHide").click(function(){
+
+                $("#box1").fadeOut();
+                $("#box2").fadeOut("slow");
+                $("#box3").fadeOut(3000);
+            });
+        });
+        </script>
+        <style type="text/css">
+        .moTa{
+            font-size: 20px;
+            font-style: italic;
+            color:navy;
+        }
+
+        #box1,#box2, #box3{
+            width:310px;
+            height: 260px;
+            float:left;
+            display: none;
+            text-align: center;
+        }
+        </style>
+    </head>
+    <body>
+        <h1 id="stanford">Stanford - Dạy lập trình</h1>
+        <p id="thongTin"></p>
+        <p>Làm việc với HTML, CSS</p>
+        <p>Làm việc với Javascript và jQuery</p>
+        <p>Làm việc với ngôn ngữ PHP</p>
+        <p>Làm việc với cơ sở dữ liệu MySQL</p>
+        Họ tên: <input type="text" id="txtHoTen"/><br>
+        <span id="thongBao" style="color:red;"></span><br>
+        Trạng thái: <input type="checkbox" id="trangThai"/>
+        <a class="info" href="https://stanford.com.vn" title="Stanford - Đào tạo và phát triển công nghệ">stanford.com.vn</a><br>
+        <a href="#" id="btnThucHien">Thực hiện</a>
+        <h3>Các ngôn ngữ lập trình</h3>
+        <ul>
+            <li>PHP</li>
+            <li>Javascript</li>
+            <li>C#</li>
+            <li>Java</li>
+            <li>Python</li>
+        </ul>
+        <a href="#" id="btnShow">Hiển thị</a>&nbsp;
+        <a href="#" id="btnHide">Ẩn</a><br>
+        <div id="box1">
+            <img src="images/thien-nhien-1.jpg" width="300" height="250"/>
+        </div>
+        <div id="box2">
+            <img src="images/thien-nhien-2.jpg" width="300" height="250"/>
+        </div>
+        <div id="box3">
+            <img src="images/thien-nhien-3.jpg" width="300" height="250"/>
+        </div>
+    </body>
+</html>

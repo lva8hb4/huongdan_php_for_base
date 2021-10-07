@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fc2b36ea-6376-48d6-9f4c-6377a45af35f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="PhpServers">
+    <servers>
+      <server host="localhost" id="4e8bc46e-1b55-45bf-afbb-bc5776a0c921" name="Appache Server" port="88" />
+    </servers>
+  </component>
+  <component name="ProjectId" id="1jpGeNQU6yC3u9JhpmKQ4qYIn9d" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Php Appache Server" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" browser="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" server_name="Appache Server" start_url="/P0920_LamViecVoiMang">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" browser="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" server_name="Appache Server" start_url="/P0920_LamViecVoiMang">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fc2b36ea-6376-48d6-9f4c-6377a45af35f" name="Default Changelist" comment="" />
+      <created>1604493713739</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604493713739</updated>
+      <workItem from="1604493715251" duration="6376000" />
+      <workItem from="1604925691892" duration="6339000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="221" y="36" key="#Servers" timestamp="1604493903892">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="221" y="36" key="#Servers/0.0.1280.760@0.0.1280.760" timestamp="1604493903892" />
+    <state x="96" y="36" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604493968935">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="96" y="36" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.760@0.0.1280.760" timestamp="1604493968935" />
+    <state x="477" y="304" key="NewPhpFileDialog" timestamp="1604931174305">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="477" y="304" key="NewPhpFileDialog/0.0.1280.760@0.0.1280.760" timestamp="1604931174305" />
+    <state x="337" y="205" key="com.intellij.ide.util.TipDialog" timestamp="1604925711854">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="337" y="205" key="com.intellij.ide.util.TipDialog/0.0.1280.760@0.0.1280.760" timestamp="1604925711854" />
+  </component>
+</project>
